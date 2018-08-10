@@ -1,0 +1,53 @@
+/* Method 2: rtl.css
+Start with your main theme stylesheet (usually style.css).
+Save this file as rtl.css
+Add the following attributes to the body selector:
+  direction: rtl;
+  unicode-bidi: embed;
+One by one, go over the CSS selectors and do the following: Remove any irrelevant attributes such as font styling attributes, colors, vertical positioning, width and height etc. Change the value (from right to left and vice-versa) of the following attributes:
+text-direction
+float
+clear
+   text-align: left;
+   float: right;
+   clear: left;
+becomes
+
+  text-align: right;
+  float: left;
+  clear: right;
+Add RTL versions of relevant images.
+Some images are clearly suited only for one direction (arrows for example). Create a horizontally flipped version of those images.
+
+Mirror the following attributes, and zero the original
+margin
+padding
+borders
+background-position
+right/left positioning
+.commentslink{
+	background:url("./images/comments.gif") no-repeat 0 3px;
+	padding-left:15px;
+        margin: 2px 4px 0px 12px;
+        left: 10px;
+}
+becomes
+
+.commentslink{
+	background:url("./images/comments-rtl.gif") no-repeat 100% 3px;
+	padding-left:0;
+        padding-right:15px;
+        margin: 2px 12px 0px 4px;
+        left:auto;
+        right:10px;
+}
+For buttons that have hidden text using text-indent, you need to change its value from negative to positive:
+
+.image-button{
+	text-indent:-99999px;
+}
+becomes
+
+.image-button{
+	text-indent:99999px;
+} */

@@ -1,0 +1,26 @@
+{
+  "name": "skratch",
+  "version": "1.0.0",
+  "description": "Packages for the Skratch theme",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-connect-php": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-plumber": "latest",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp build",
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Rodier Solutions - Jess Rodier",
+  "license": "ISC"
+}
